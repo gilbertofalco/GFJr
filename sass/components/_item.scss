@@ -1,0 +1,47 @@
+.item {
+    // height: 5rem;
+    // position: relative;
+
+    &__details {
+        text-align: center;
+        color: $color-black;
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0 auto;
+
+            li {
+                text-align: left;
+                font-size: 1.8rem;
+                
+            }
+        }
+    }
+
+    @include respond(tab-port) {
+        position: relative;
+
+        &__details {
+            text-align: center;
+            color: $color-black;
+            padding: .5rem;
+
+            ul {
+                list-style: none;
+                width: 100%;
+                margin: 0 auto;
+
+                li {
+                    text-align: center;
+                    font-size: 2.5rem;
+                    padding: 1rem 0;
+
+                 
+                }
+            }
+
+        }
+    }
+}

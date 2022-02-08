@@ -1,0 +1,108 @@
+.section-banner {
+    background-color: black;
+    height: 100vh;
+    margin-top: -10rem;
+    background-image: linear-gradient(to right bottom, rgba($color-black, 0.8), rgba($color-black, .5)), url('../../img/banner.png');
+    background-size: cover;
+
+    &--card {
+        margin-top: 8rem;
+        background-color: rgba($color-white, .1);
+        font-size: $default-font-size;
+        padding: 6rem;
+        font-weight: 400;
+        text-align: center;
+        // letter-spacing: .1rem;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+        color: $color-white;
+    }
+
+    @include respond(tab-land) {
+        padding: 5rem;
+        background-color: black;
+        height: auto;
+        margin-top: -10rem;
+        background-image: linear-gradient(to right bottom, rgba($color-black, 0.8), rgba($color-black, .5)), url('../../img/banner.png');
+        background-size: cover;
+
+        &--card {
+            // margin: 10rem 0;
+            background-color: rgba($color-white, .1);
+            font-size: $default-font-size;
+            padding: 6rem;
+            font-weight: 400;
+            text-align: center;
+            // letter-spacing: .1rem;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+            color: $color-white;
+        }
+    }
+}
+
+.section-about {
+    background-color: $color-white;
+    line-height: 3rem;
+    padding: 6rem;
+    font-weight: 400;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .7);
+    // height: 100vh;
+
+    @include respond(tab-port) {
+        padding: 7rem 0;
+        text-align: center;
+    }
+}
+
+.section-features {
+    padding: 5rem;
+    background-color: $color-black;
+    background-image: url("../../img/features.png");
+    color: $color-black;
+
+    background-size: cover;
+    // height: 100vh;
+    position: relative;
+
+}
+
+.section-map {
+    background-color: $color-white;
+    padding: 7rem 0;
+
+    // height: 100vh; // padding-top: -150rem;
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+}
+
+.section-book {
+
+    padding: 5rem;
+    // background-image: linear-gradient(to right bottom, rgba($color-light-gray, .5), rgba($color-dark-gray, .5));
+    background-color: $color-white;
+    font-size: 2rem;
+    color: $color-black;
+
+    &__img {
+        height: 15vh;
+    }
+
+    @include respond(tab-port) {
+        padding: 3rem 0;
+        font-size: 2.5rem;
+    }
+}
+
+.section-partners {
+    // background-color: $color-medium-gray;
+    padding: 5rem;
+    position: relative;
+    background-color: $color-black;
+    height: 100vh;
+
+    @include respond(tab-land) {
+        height: auto;
+    }
+}

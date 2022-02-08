@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-white;
+    // padding: 4rem;
+    background-color: $color-white;
+}
+
+.heading-primary {
+    color: $color-black;
+    font-family: 'Noto Serif', serif;
+
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    backface-visibility: hidden;
+    font-size: 4.5rem;
+
+    @include respond(tab-land) {
+        font-family: 'Noto Serif', serif;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $color-black;
+
+        transition: all .2s;
+    }
+}
+
+.heading-primary-white {
+    color: $color-white;
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    backface-visibility: hidden;
+    font-size: 4.5rem;
+
+    @include respond(tab-land) {
+        font-family: 'Noto Serif', serif;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $color-white;
+
+        transition: all .2s;
+    }
+
+}
+
+.heading-secondary {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color-white;
+    display: inline-block;
+    transition: all .2s;
+
+    &:hover {
+        text-shadow: 2rem 1rem 5rem rgba($color-black, .5);
+    }
+
+    @include respond(tab-port) {
+        font-family: 'Noto Serif', serif;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $color-white;
+        display: inline-block;
+        transition: all .2s;
+    }
+}
+
+.heading-secondary--black {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color-black;
+    display: inline-block;
+    transition: all .2s;
+
+    &:hover {
+        text-shadow: 2rem 1rem 5rem rgba($color-black, .5);
+    }
+
+    @include respond(tab-port) {
+        font-family: 'Noto Serif', serif;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $color-black;
+        display: inline-block;
+        transition: all .2s;
+    }
+}
+
+.heading-tertiary {
+    font-size: $title-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-dark-gray;
+
+    @include respond(phone) {
+        margin-top: -10px;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.paragraph {
+    font-size: 2rem;
+    padding: 8px;
+    text-align: left;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+.wpp-fixed {
+    position: fixed;
+    bottom: 1.5px;
+    right: 1.5px;
+
+    &__logo {
+        height: 7rem;
+
+    }
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.shake {
+    animation: shake .2s;
+    animation-iteration-count: infinite;
+}
+
+.topic {
+    font-weight: 900;
+    // margin: 0 1rem;
+    text-transform: uppercase;
+}
