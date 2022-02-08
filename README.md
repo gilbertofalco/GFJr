@@ -1,3 +1,3 @@
 # GFJr
 
-Landing Page mande with Sass
+Landing Page made with Sass
